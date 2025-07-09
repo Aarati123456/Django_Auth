@@ -4,18 +4,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Custom Register</h2>
+    <h2>Custom Register </h2>
     <form method="post">
         {% csrf_token %}
-        {{forms.as_p}}
+        {{form.as_p}}
         <button type="submit">
-            register
+            Register
         </button>
     </form>
     <p>
-        Already have an account?
-        <a href="/custom_login/">Login here </a>
+        Already have have an account?
+        <a href="/custom_login/">Login here</a>  
     </p>
-    
 </body>
 </html>

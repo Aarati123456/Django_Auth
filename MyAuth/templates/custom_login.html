@@ -7,13 +7,14 @@
     <h2>Custom login</h2>
     <form method="post">
         {% csrf_token %}
+        {{form.as_p}}
         <button type="submit">
             login
         </button>
     </form>
     <p>
         Dont have an account?
-        <a hredf="/custom_register/">Regisetr here</a>
+        <a hredf="/custom_register/"></a>
     </p>
     
 </body>
